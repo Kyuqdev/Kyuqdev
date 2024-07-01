@@ -5,13 +5,13 @@ body {
 }
 
 img {
-    width:3vw;
-    height:3hv;
-    float:left;
+    width: 3vw;
+    aspect-ratio: 1 / 1;
+    margin: 1em;
 }
 
 .item {
-    word-wrap:break-word;
+    word-wrap: break-word;
     background-color: #313338;
     width: 30%;
     padding: 1em;
@@ -19,21 +19,20 @@ img {
     text-align: center;
     border: 10px solid #313338;
     border-radius: 10px;
-    vertical-align: bottom;
 }
 
 #card {
+    align-items: center;
+    display: flex;
+    justify-content: left;
     background-color: #3d4045;
     width: 70%;
-    
 }
-
-
 
 .container {
     height: 75vh;
     margin: 5%;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
