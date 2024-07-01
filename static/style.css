@@ -1,0 +1,39 @@
+body {
+    background-color: #2B2D32;
+    color: rgb(174, 174, 174);
+    font-family: Verdana, Geneva, Tahoma, sans-serif, bold;
+}
+
+img {
+    width:3vw;
+    height:3hv;
+    float:left;
+}
+
+.item {
+    word-wrap:break-word;
+    background-color: #313338;
+    width: 30%;
+    padding: 1em;
+    font-weight: 700;
+    text-align: center;
+    border: 10px solid #313338;
+    border-radius: 10px;
+    vertical-align: bottom;
+}
+
+#card {
+    background-color: #3d4045;
+    width: 70%;
+    
+}
+
+
+
+.container {
+    height: 75vh;
+    margin: 5%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
