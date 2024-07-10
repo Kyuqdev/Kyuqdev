@@ -6,19 +6,26 @@ body {
 }
 
 a {
+    text-decoration: none;
     color:green;
+    cursor: pointer;
+    transition: color 0.2s;
 }
 
-img {
+a:hover {
+    color: #00ff00 !important;
+    text-decoration: underline;
+}
+
+.card img {
     width: 7vw;
     aspect-ratio: 1 / 1;
     margin: 1em;
-    horizontal-align: middle;
 }
 
 .item {
     display:flex;
-    flex-direction: raw;
+    flex-direction: row;
     background: #313338;
     padding: 1em;
     font-weight: 700;
@@ -37,16 +44,52 @@ img {
     background-color: #3d4045;
     border-radius: 10px;
     display:flex;
-
     align-items: center;
     justify-content: left;
     text-align: left;
 }
 
 .container {
-    height: 75vh;
+    min-height: 75vh;
     margin: 5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.lang-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 40px;
+    width: 45%;
+    padding: .5em 1em;
+    border-radius: 10px;
+}
+
+.lang-card img {
+    width: 20px;
+    aspect-ratio: 1 / 1;
+}
+
+.lang-card a {
+    color: black;
+}
+
+.project-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 40px;
+    width: 80%;
+    padding: .5em 1em;
+    border-radius: 10px;
+}
+
+.project-card img {
+    width: 20px;
+    aspect-ratio: 1 / 1;
 }
