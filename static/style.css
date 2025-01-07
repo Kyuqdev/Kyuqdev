@@ -5,13 +5,18 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif, bold;
 }
 
-#textcard {
-    a {
-        color: rgb(174, 174, 174);
-    }
-    a:hover {
-        color: green
-    }
+.textcard {
+    a {color: #e3e3e3}
+    min-height: 4.4vw;
+    min-width: 10em;
+    padding: 0.6em;
+    border: 10px solid #3d4045;
+    background-color: #3d4045;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
 }
 
 a {
