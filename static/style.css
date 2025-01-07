@@ -5,18 +5,33 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif, bold;
 }
 
+#textcard {
+    a {
+        color: rgb(174, 174, 174);
+    }
+    a:hover {
+        color: green
+    }
+}
+
 a {
-    color:green;
+    color: black;
+}
+
+a:hover {
+    color: green
 }
 
 img {
-    width: 7vw;
+    min-width: 2vh;
+    max-width: 3vh;
     aspect-ratio: 1 / 1;
-    margin: 1em;
-    horizontal-align: middle;
+    margin: 0.3vw
 }
 
 .item {
+    width: 50%;
+    margin: 1em;
     display:flex;
     flex-direction: raw;
     background: #313338;
@@ -32,12 +47,13 @@ img {
 }
 
 .card {
-    padding: 1em;
+    min-height: 4.4vw;
+    min-width: 10em;
+    padding: 0.6em;
     border: 10px solid #3d4045;
     background-color: #3d4045;
     border-radius: 10px;
     display:flex;
-
     align-items: center;
     justify-content: left;
     text-align: left;
@@ -49,4 +65,13 @@ img {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+@media screen and (max-width: 900px) {
+.container {
+    flex-direction: column
+}
+.item {
+    width: 80%;
+}
+
 }

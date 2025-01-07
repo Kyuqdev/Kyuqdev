@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!DOCTYPE html>
 <html>
 
@@ -9,71 +10,89 @@
 
 <body>
     <div class="container">
-        <div class="item" style="width: 50%">
-            <div class="card" style="align-items:start">
-                <img src="/Images/Pfp.png">
+        <div class="item">
+            <div id="textcard" class="card" style="align-items:start; color:rgb(174, 174, 174)">
+                <img src="/Images/Pfp.png" style="max-width: 10vw">
                 <p>
-                    Kyuqdev - your not so self proclaimed coder!<br><br>
-                    Hi, I'm Kyu, a ukrainian coder that begun coding in around 2021!
+                    <a href="https://github.com/Kyuqdev"> Kyuqdev</a> - your not so self proclaimed coder!<br><br>
+                    Hi, I'm Kyu, a ukrainian coder that begun coding in around 2021!<br><br>
                     On the left menu you can see the programing languages im familiar with,
                     click on them to get to their download page.<br><br>
                     On the right menu you can see my github account and
                     a bunch of my public projects that i have been working on,
                     click on them to get to their github page.<br><br>
-                    Big shoutout to <a href="https://larssj.dev/" target="_blank" style="color: green">Pre1ude0</a>,
+                    Big shoutout to <a href="https://larssj.dev/" target="_blank">Pre1ude0</a>,
                     better known as Laura for helping me with a lot of my projects!
                 </p>
+
             </div>
 
             <!--language list-->
 
             <div class="card" style="background: linear-gradient(135deg, rgba(0,148,179,1) 14%, rgba(182,215,46,1) 100%); border: yellow; width:43%">
-                <img src="Images/python-logo.png" style="width: 2vw">
+                <img src="Images/python-logo.png">
 
                 <span style="font-size: 110%;">
-                    <a href="https://www.python.org/downloads/" target="_blank" style="color:black">Python</a>
+                    <a href="https://www.python.org/downloads/" target="_blank">Python</a>
+                </span>
+
+            </div>
+
+            <div class="card" style="background: linear-gradient(-45deg, rgba(0,255,240,1) 14%, rgba(182,215,46,1) 100%); border: yellow; width:43%">
+                <img src="Images/Qt.png">
+
+                <span style="font-size: 110%;">
+                    <a href="https://pypi.org/project/PyQt5/" target="_blank" style="hover:color:grey">PyQt5</a>
                 </span>
 
             </div>
 
             <div class="card" style="background: linear-gradient(135deg, rgba(177,177,177,1) 14%, rgba(93,93,93,1) 100%); border: gray; width:43%">
-                <img src="Images/sql-database.png" style="width: 2vw;">
+                <img src="Images/sql-database.png">
 
                 <span style="color:black; font-size: 110%">
-                    <a href="https://sqlitebrowser.org/dl/" target="_blank" style="color:black">SQLBrowser</a>
-                    , and
-                    <a href="https://www.sqlite.org/" target="_blank" style="color:black">SQLite 3</a>
+                    <a href="https://sqlitebrowser.org/dl/" target="_blank">SQLBrowser</a>
+                    ,
+                    <a href="https://www.sqlite.org/" target="_blank">SQLite 3</a>
                 </span>
 
             </div>
 
+            <div class="card" style="background: linear-gradient(-90deg, rgba(177,177,177,1) 14%, rgba(93,93,93,1) 100%); border: gray; width:43%">
+                <img src="Images/Kivy.png">
+
+                <span style="color:black; font-size: 110%">
+                    <a href="https://kivy.org/" target="_blank">Kivy</a>
+                </span>
+            </div>
 
             <div class="card" style="background: linear-gradient(135deg, rgba(255,169,64,1) 0%, rgba(119,109,88,1) 100%); border:orange; width: 43%;">
-                <img src="Images/html5.png" style="width: 2vw">
+                <img src="Images/html5.png">
                 <span style="color:black; font-size: 110%">
                     HTML5
                 </span>
             </div>
 
+            <div class="card" style="background: linear-gradient(-70deg, rgba(238,236,57,1) 10%, rgba(0,0,0,1) 100%); border:orange; width: 43%;">
+                <img src="Images/json.png">
+                <span style="color:black; font-size: 110%">
+                    JSON
+                </span>
+            </div>
+
             <div class="card" style="background: linear-gradient(135deg, rgba(0,20,200,1) 0%, rgba(88,91,119,1) 100%); border:orange; width: 43%;">
-                <img src="Images/CSS3.png" style="width: 1.5vw; height:5vh">
+                <img src="Images/CSS3.png">
                 <span style="color:black; font-size: 110%">
                     CSS3
                 </span>
             </div>
 
-            <div class="card" style="background: linear-gradient(142deg, rgba(238,236,57,1) 19%, rgba(0,0,0,1) 100%); border:orange; width: 43%;">
-                <img src="Images/json.png" style="width: 1.5vw; height:5vh">
-                <span style="color:black; font-size: 110%">
-                    JSON
-                </span>
-            </div>
         </div>
 
         <!--second menu-->
-        <div class="item" style="width: 30%">
+        <div class="item" style="width: 50%">
 
-            <div class="card" style="width:100%;">
+            <div id="textcard" class="card" style="width:100%;">
                 <a href="https://github.com/Kyuqdev"><img src="https://avatars.githubusercontent.com/u/131807399?v=4" style="width:3vw"></a>
                     <p style="align-items:stretch;">
                         <a href="https://github.com/Kyuqdev" target="_blank">
@@ -83,28 +102,31 @@
             </div>
 
             <div class="card" style="width: 70%; background: linear-gradient(122deg, rgba(153,88,144,1) 0%, rgba(64,39,59,1) 100%); border:yellow">
+                <img src="Images/sql-database.png">
+                <img src="Images/python-logo.png">
                 <a href="https://github.com/Kyuqdev/HTML-TODOLIST" target="_blank" style="color:rgb(82, 0, 83)">
                     Web Todo list
                 </a>
-                <img src="Images/sql-database.png" style="width: 2vw;">
-                <img src="Images/python-logo.png" style="width: 2vw">
             </div>
 
             <div class="card" style=" width:70%; background: linear-gradient(122deg, rgba(204,150,79,1) 0%, rgba(90,100,227,1) 100%); border:black">
+                <img src="Images/html5.png">
+                <img src="Images/CSS3.png">
                 <a href="https://github.com/Kyuqdev/Visit-card-website" target="_blank" style="color:rgb(100, 50, 2)">
                     This website
                 </a>
-                <img src="Images/html5.png" style="width: 2vw">
-                <img src="Images/CSS3.png" style="width: 1.5vw; height:5vh">
+
             </div>
 
 
 
             <div class="card" style="width:70%; background: linear-gradient(94deg, rgba(255,255,255,1) 14%, rgba(93,103,226,1) 100%); border:black;">
+                <img src="Images/python-logo.png">
+                <img src="Images/json.png">
+                <img src="Images/Qt.png">
                 <a href="https://github.com/Kyuqdev/Kyus-BRC-Character-selector" target="_blank" style="color:gray">
                     BRC Char select
                 </a>
-                <img src="Images/python-logo.png" style="width:2vw">
             </div>
         </div>
     </div>
