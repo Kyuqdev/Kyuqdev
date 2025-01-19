@@ -5,11 +5,9 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif, bold;
 }
 
-#text {
-    width:100px;
-}
 
 .textcard {
+    width:100%;
     a {color: #e3e3e3}
     min-height: 4.4vw;
     min-width: 10em;
@@ -24,7 +22,9 @@ body {
 }
 
 a {
+    transition: color 0.2s;
     color: black;
+    font-size: 110%;
 }
 
 a:hover {
@@ -47,7 +47,6 @@ code {
 .item {
     margin: 1em;
     display:flex;
-    flex-direction: row;
     background: #313338;
     padding: 1em;
     font-weight: 700;
@@ -57,10 +56,11 @@ code {
     border-radius: 10px;
     gap: 5px 5px;
     justify-content: space-evenly;
-    flex-wrap:wrap
+    flex-wrap:wrap;
 }
 
 .card {
+    color:black;
     min-height: 4.4vw;
     min-width: 10em;
     padding: 0.6em;
@@ -71,17 +71,70 @@ code {
     align-items: center;
     justify-content: left;
     text-align: left;
+    border: yellow;
+}
+
+#python {
+    background: linear-gradient(135deg, rgba(0,148,179,1) 14%, rgba(182,215,46,1) 100%);
+    width:43%;
+}
+#pyqt {
+    background: linear-gradient(-45deg, rgba(0,255,240,1) 14%, rgba(182,215,46,1) 100%);
+    width:43%
+}
+#sql {
+    background: linear-gradient(135deg, rgba(177,177,177,1) 14%, rgba(93,93,93,1) 100%);
+    width:43%
+}
+#kivy {
+    background: linear-gradient(-90deg, rgba(177,177,177,1) 14%, rgba(93,93,93,1) 100%);
+    width:43%
+}
+#html {
+    background: linear-gradient(135deg, rgba(255,169,64,1) 0%, rgba(119,109,88,1) 100%);
+    width: 43%;
+}
+#json {
+    background: linear-gradient(-70deg, rgba(238,236,57,1) 10%, rgba(0,0,0,1) 100%);
+    width: 43%;
+}
+#css {
+    background: linear-gradient(135deg, rgba(0,20,200,1) 0%, rgba(88,91,119,1) 100%);
+    width: 43%
+}
+
+
+#todo {
+    width: 29%;
+    background: linear-gradient(122deg, rgba(153,88,144,1) 0%, rgba(64,39,59,1) 100%);
+}
+#tswebsite {
+    width:29%;
+    background: linear-gradient(122deg, rgba(204,150,79,1) 0%, rgba(90,100,227,1) 100%);
+}
+#brc {
+    width:29%;
+    background: linear-gradient(94deg, rgba(255,255,255,1) 14%, rgba(93,103,226,1) 100%);
 }
 
 .container {
-    height: 75vh;
+    min-height: 75vh;
     margin: 5%;
     display: flex;
-    all:auto;
+    justify-content:space-around;
+    align-items: center;
 }
-@media screen and (max-width: 900px) {
+
+.right-menu {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+@media screen and (max-width: 1400px) {
 .container {
-    flex-direction: column
+    flex-direction: column;
+    align-items: center;
 }
 .item {
     width: 80%;
