@@ -5,6 +5,10 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif, bold;
 }
 
+#text {
+    width:100px;
+}
+
 .textcard {
     a {color: #e3e3e3}
     min-height: 4.4vw;
@@ -33,12 +37,17 @@ img {
     aspect-ratio: 1 / 1;
     margin: 0.3vw
 }
+code {
+    color: darkgreen;
+    text-wrap: wrap;
+    height: 120px;
+    max-width: 100%;
+}
 
 .item {
-    width: 50%;
     margin: 1em;
     display:flex;
-    flex-direction: raw;
+    flex-direction: row;
     background: #313338;
     padding: 1em;
     font-weight: 700;
@@ -68,8 +77,7 @@ img {
     height: 75vh;
     margin: 5%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    all:auto;
 }
 @media screen and (max-width: 900px) {
 .container {
